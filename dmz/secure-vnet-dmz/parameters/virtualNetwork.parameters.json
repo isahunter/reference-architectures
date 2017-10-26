@@ -15,7 +15,7 @@
             "addressPrefix": "192.168.104.176/27"
           },
 	  {
-            "name": "mgmt",
+            "name": "mangement",
             "addressPrefix": "192.168.104.160/28"
           },	
           {

@@ -14,10 +14,6 @@
             "name": "GatewaySubnet",
             "addressPrefix": "192.168.104.176/27"
           },
-	  {
-            "name": "mangement",
-            "addressPrefix": "192.168.104.160/28"
-          },	
           {
             "name": "private-dmz-in",
             "addressPrefix": "192.168.104.144/28"

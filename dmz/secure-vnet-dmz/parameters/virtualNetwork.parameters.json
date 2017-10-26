@@ -1,54 +1,55 @@
-﻿{
+{
   "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-  "contentVersion": "1.0.0.0",
+  "contentVersion": "1.104.0.0",
   "parameters": {
     "virtualNetworkSettings": {
       "value": {
-        "name": "ra-vnet",
-        "resourceGroup": "ra-public-dmz-network-rg",
+        "name": "tnazeu-pd-vnet",
+        "resourceGroup": "tnazeu-pd-vnet-rg",
         "addressPrefixes": [
-          "10.0.0.0/16"
+          "192.168.104.0/23"
         ],
         "subnets": [
           {
             "name": "GatewaySubnet",
-            "addressPrefix": "10.0.255.224/27"
+            "addressPrefix": "192.168.104.176/27"
           },
           {
             "name": "mgmt",
-            "addressPrefix": "10.0.0.128/25"
+            "addressPrefix": "192.168.104.160/28"
           },
           {
             "name": "private-dmz-in",
-            "addressPrefix": "10.0.0.0/27"
+            "addressPrefix": "192.168.104.144/28"
           },
           {
             "name": "private-dmz-out",
-            "addressPrefix": "10.0.0.32/27"
+            "addressPrefix": "192.168.104.128/28"
           },
           {
             "name": "public-dmz-in",
-            "addressPrefix": "10.0.0.64/27"
+            "addressPrefix": "192.168.104.112/28"
           },
           {
             "name": "public-dmz-out",
-            "addressPrefix": "10.0.0.96/27"
+            "addressPrefix": "192.168.104.96/28"
           },
           {
             "name": "web",
-            "addressPrefix": "10.0.1.0/24"
+            "addressPrefix": "192.168.104.64/27"
           },
           {
-            "name": "biz",
-            "addressPrefix": "10.0.2.0/24"
+            "name": "app",
+            "addressPrefix": "192.168.104.32/27"
           },
           {
             "name": "data",
-            "addressPrefix": "10.0.3.0/24"
+            "addressPrefix": "192.168.104.0/27"
           }
         ],
-        "dnsServers": [ ]
+        "dnsServers": []
       }
     }
   }
 }
+	
